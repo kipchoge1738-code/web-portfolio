@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Amos Kipkoech — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Syne Mono (headers) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NOISE OVERLAY ===================== -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+    <div class="nav__logo">
+
+      <span class="nav__logo-text">AK<span class="nav__logo-dot">.</span></span>
+    </div>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks" role="list">
+      <li><a href="#hero"     class="nav__link" data-section="hero">Home</a></li>
+      <li><a href="#about"    class="nav__link" data-section="about">About</a></li>
+      <li><a href="#skills"   class="nav__link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav__link" data-section="projects">Projects</a></li>
+      <li><a href="#services" class="nav__link" data-section="services">Services</a></li>
+      <li><a href="#contact"  class="nav__link" data-section="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero section" id="hero" aria-label="Hero">
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+    <div class="hero__particles" id="heroParticles" aria-hidden="true"></div>
+
+    <div class="hero__content container">
+      <div class="hero__photo-wrap">
+
+        <div class="hero__photo-ring" aria-hidden="true"></div>
+        <img
+          src="Image2.png"
+          alt="Profile photo"
+          class="hero__photo"
+          width="260" height="260"
+        />
+        <div class="hero__photo-glow" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__text">
+        <p class="hero__label">
+          <span class="hero__label-bar"></span>
+          <!-- Your current role / status -->
+          Available for hire
+        </p>
+
+        <!-- Full name -->
+        <h1 class="hero__name">Amos <br /><em>Kipkoech</em></h1>
+
+        <div class="hero__title-wrap" aria-live="polite">
+          <span class="hero__title-static">I'm a statistical analyst </span>
+          <!-- The typing animation targets this element -->
+          <span class="hero__typing" id="heroTyping" aria-label="rotating job titles"></span>
+          <span class="hero__cursor" aria-hidden="true">|</span>
+        </div>
+
+        <!-- REPLACE: Your short tagline / one-liner -->
+        <p class="hero__tagline">
+          I turn data chaos into decisions — and manual work into automated systems —<br />
+          so you can focus on what matters.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact"  class="btn btn--ghost">Get In Touch</a>
+        </div>
+
+        <div class="hero__socials">
+          <!-- REPLACE: Update href values with your actual social links -->
+          <a href="https://github.com/Amos213"   target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/kipkoech-amos" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://twitter.com"  target="_blank" rel="noopener" class="social-link" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="mailto:akipkoech582@gmail.com" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll-hint" aria-label="Scroll to About">
+      <span class="hero__scroll-text">scroll</span>
+      <span class="hero__scroll-arrow" aria-hidden="true"></span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about section reveal" id="about" aria-label="About me">
+    <div class="container">
+      <div class="section-header reveal__child">
+        <span class="section-tag">01 — About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__bio reveal__child">
+          <!-- REPLACE: Your bio paragraphs -->
+          <p>
+            I'm Amos Kipkoech, a Business Intelligence & Automation Specialist helping businesses extract real value from their data.
+            I have a passion for transforming complex datasets into actionable insights and automating workflows to boost efficiency. My work is at
+            Whether you're drowning in spreadsheets, flying blind without dashboards, or wasting hours on tasks a script could
+            handle in seconds — that's exactly where I come in.
+          </p>
+          <p>
+            I design clean data pipelines, build dashboards that actually make sense, and automate the workflows slowing your 
+            team down. No bloated reports. No fluff. Just clear insights and systems that work.
+            If your data isn't driving decisions, it's just noise. <em>Let's fix that</em>.
+          </p>
+
+          <!-- REPLACE: Stats that represent your own experience -->
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__num" data-count="5">2</span><span class="stat__suffix">+</span>
+              <span class="stat__label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="40">15</span><span class="stat__suffix">+</span>
+              <span class="stat__label">Projects Shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="12">12</span><span class="stat__suffix">+</span>
+              <span class="stat__label">Happy Clients</span>
+            </div>
+          </div>
+
+          <!-- REPLACE: Link to your actual resume PDF -->
+          <a href="resume.pdf" class="btn btn--primary" download>Download Résumé</a>
+        </div>
+
+        <div class="about__terminal reveal__child" aria-label="Quick facts terminal">
+          <div class="terminal">
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+              <span class="terminal__bar-title">about.sh</span>
+            </div>
+            <div class="terminal__body">
+              <p><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></p>
+              <!-- REPLACE: Your name and title below -->
+              <p class="t-out">Amos Kipkoech — Bussiness Intelligence And Automation Specialist</p>
+              <p><span class="t-prompt">$</span> <span class="t-cmd">cat location.txt</span></p>
+              <!-- REPLACE: Your location -->
+              <p class="t-out">Nairobi, Kenya 🌍</p>
+              <p><span class="t-prompt">$</span> <span class="t-cmd">cat education.txt</span></p>
+              <!-- REPLACE: Your education -->
+              <p class="t-out">BSc. Math</p>
+              <p><span class="t-prompt">$</span> <span class="t-cmd">cat interests.txt</span></p>
+              <!-- REPLACE: Your interests -->
+              <p class="t-out">[ "Open Source", "Data Analysis",</p>
+              <p class="t-out t-indent">"Coffee", "Automation" ]</p>
+              <p><span class="t-prompt">$</span> <span class="t-cursor">█</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="skills section reveal" id="skills" aria-label="Skills">
+    <div class="container">
+      <div class="section-header reveal__child">
+        <span class="section-tag">02 — Skills</span>
+        <h2 class="section-title">What I Work With</h2>
+      </div>
+
+      <!-- REPLACE: Update skill names, percentages, and categories to match yours -->
+      <div class="skills__grid">
+        <div class="skills__category reveal__child">
+          <h3 class="skills__cat-title">Data Analytics</h3>
+          <div class="skill-bar" data-skill="SQL (PostgreSQL / MySQL)"   data-pct="92"></div>
+          <div class="skill-bar" data-skill="Data Analysis"        data-pct="88"></div>
+          <div class="skill-bar" data-skill="Data Cleaning"    data-pct="95"></div>
+          <div class="skill-bar" data-skill="Data Transformation"  data-pct="70"></div>
+          <div class="skill-bar" data-skill="Query Optimization"  data-pct="68"></div>
+        </div>
+
+        <div class="skills__category reveal__child">
+          <h3 class="skills__cat-title">Data Techniques</h3>
+          <div class="skill-bar" data-skill="Joins & Aggregations" data-pct="85"></div>
+          <div class="skill-bar" data-skill="Subqueries & CTEs"  data-pct="80"></div>
+          <div class="skill-bar" data-skill="Data Modeling"        data-pct="78"></div>
+          <div class="skill-bar" data-skill="Reporting Queries"           data-pct="72"></div>
+        </div>
+
+        <div class="skills__category reveal__child">
+          <h3 class="skills__cat-title">Tools</h3>
+          <div class="skill-bar" data-skill="Excel / Google Sheets"      data-pct="95"></div>
+          <div class="skill-bar" data-skill="Power BI / Tableau"      data-pct="75"></div>
+          <div class="skill-bar" data-skill="Jupyter Notebook"         data-pct="70"></div>
+          <div class="skill-bar" data-skill="Git / GitHub"    data-pct="82"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="projects section reveal" id="projects" aria-label="Projects">
+    <div class="container">
+      <div class="section-header reveal__child">
+        <span class="section-tag">03 — Projects</span>
+        <h2 class="section-title">Selected Work</h2>
+      </div>
+
+      <div class="projects__grid">
+
+        <!-- PROJECT CARD 1 — REPLACE all fields -->
+        <article class="project-card reveal__child" tabindex="0">
+          <div class="project-card__img-wrap">
+            <!-- REPLACE: src with your project screenshot path -->
+            <img src="project1a.jpeg" alt="Project One screenshot" loading="lazy" />
+            <div class="project-card__overlay">
+              <!-- REPLACE: Links for live demo and source code -->
+              <a href="#" target="_blank" rel="noopener" class="btn btn--sm btn--primary">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">Source</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <!-- REPLACE: Project number, title, description, and tags -->
+            <span class="project-card__num">001</span>
+            <h3 class="project-card__title">Excel and Data Analysis</h3>
+            <p class="project-card__desc">
+              I work with Excel at an advanced level — building pivot tables to summarize large datasets, using XLOOKUP to 
+              pull precise data across sheets, and structuring raw data into clean, actionable reports. Whether it's financial 
+              summaries, inventory tracking, or performance dashboards, I know how to make Excel do the heavy lifting so you
+              don't have to. Every project I take on is built for clarity and usability — not just formulas for the sake of it. Browse
+              the sample projects below to see exactly what that looks like in practice.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Data Cleaning</span>
+              <span class="tag">Excel</span>
+              <span class="tag">XLOOKUP</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT CARD 2 — REPLACE all fields -->
+        <article class="project-card reveal__child" tabindex="0">
+          <div class="project-card__img-wrap">
+            <img src="project2a.jpeg" alt="Project Two screenshot" loading="lazy" />
+            <div class="project-card__overlay">
+              <a href="#" target="_blank" rel="noopener" class="btn btn--sm btn--primary">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">Source</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__num">002</span>
+            <h3 class="project-card__title">SQL And Data Analysis</h3>
+            <p class="project-card__desc">
+              I use SQL to query, clean, and analyze data directly from databases — no exports, no workarounds. From writing 
+              JOINs to combine tables, GROUP BY aggregations to summarize trends,
+              subqueries, and CTEs for complex logic.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">JOINS</span>
+              <span class="tag">GROUP BY</span>
+              <span class="tag">Subqueries</span>
+              <span class="tag">Aggregations</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT CARD 3 — REPLACE all fields -->
+        <article class="project-card reveal__child" tabindex="0">
+          <div class="project-card__img-wrap">
+            <img src="project3a.jpeg" alt="Project Three screenshot" loading="lazy" />
+            <div class="project-card__overlay">
+              <a href="#" target="_blank" rel="noopener" class="btn btn--sm btn--primary">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">Source</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__num">003</span>
+            <h3 class="project-card__title">Power Bi</h3>
+            <p class="project-card__desc">
+              I build interactive dashboards and reports that turn raw data into clear, actionable insights. 
+              From data modeling to DAX formulas, I know how to make Power BI work for you.
+              Whether it's sales performance, customer analytics, or operational metrics.
+
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Data Modeling</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT CARD 4 — REPLACE all fields -->
+        <article class="project-card reveal__child" tabindex="0">
+          <div class="project-card__img-wrap">
+            <img src="https://placehold.co/600x360/0d1b2a/b14aed?text=Project+Four" alt="Project Four screenshot" loading="lazy" />
+            <div class="project-card__overlay">
+              <a href="#" target="_blank" rel="noopener" class="btn btn--sm btn--primary">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">Source</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__num">004</span>
+            <h3 class="project-card__title">Orbit — DevOps Monitor</h3>
+            <p class="project-card__desc">
+              Infrastructure health monitoring with custom alerting rules,
+              Slack integrations, and a stunning real-time status dashboard.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Prometheus</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects__grid -->
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services section reveal" id="services" aria-label="Services">
+    <div class="container">
+      <div class="section-header reveal__child">
+        <span class="section-tag">04 — Services</span>
+        <h2 class="section-title">What I Offer</h2>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- REPLACE: Update each service title, description, and icon SVG to match what you offer -->
+
+        <div class="service-card reveal__child">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="4" y="12" width="3" height="8" rx="1.5"/>
+              <rect x="10.5" y="8" width="3" height="12" rx="1.5"/>
+              <rect x="17" y="4" width="3" height="16" rx="1.5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Data Analysis</h3>
+          <p class="service-card__desc">
+            I analyze structured data to uncover trends, patterns, and insights that support decision-making.
+            Using SQL, I turn raw data into meaningful summaries and reports that answer real business questions.
+          </p>
+        </div>
+
+        <div class="service-card reveal__child">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 4h18l-7 7v7l-4 3V11L3 4z"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Data Cleaning</h3>
+          <p class="service-card__desc">
+            I prepare raw data by handling missing values, removing duplicates, and correcting inconsistencies.
+            This ensures accuracy and reliability before any analysis is performed.
+          </p>
+        </div>
+
+        <div class="service-card reveal__child">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 3l5 5-5 5"/>
+              <path d="M8 21l-5-5 5-5"/>
+              <path d="M9 8h6"/>
+              <path d="M9 16h6"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Data Transformation</h3>
+          <p class="service-card__desc">
+            I transform raw data into structured formats suitable for analysis and reporting.
+            This includes data type conversions, normalization, and creating derived metrics.
+          </p>
+        </div>
+
+        <div class="service-card reveal__child">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 12a8 8 0 0116 0"/>
+              <path d="M12 12l4-4"/>
+              <path d="M12 12v6"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Query Optimization</h3>
+          <p class="service-card__desc">
+            I optimize SQL queries to improve performance and reduce execution time.
+            This includes indexing strategies, query restructuring, and analyzing execution plans.
+          </p>
+        </div>
+
+        <div class="service-card reveal__child">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="6"/>
+              <path d="M16.5 16.5l4 4"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Data Exploration</h3>
+          <p class="service-card__desc">
+            I explore datasets to understand their structure, identify outliers, and discover hidden patterns.
+            This helps in formulating hypotheses and guiding further analysis.
+          </p>
+        </div>
+
+        <div class="service-card reveal__child">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <ellipse cx="12" cy="5" rx="7" ry="3"/>
+              <path d="M5 5v6c0 3.3 3.1 6 7 6s7-2.7 7-6V5"/>
+              <path d="M8 11l-2 2 2 2"/>
+              <path d="M16 11l2 2-2 2"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Advanced SQL</h3>
+          <p class="service-card__desc">
+            I leverage advanced SQL techniques to extract insights from complex datasets and create sophisticated reports.
+             This includes window functions, recursive queries, and dynamic SQL generation.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact section reveal" id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal__child">
+        <span class="section-tag">05 — Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal__child">
+          <!-- REPLACE: Your actual contact details -->
+          <p class="contact__intro">
+            Whether you have a question about my work, want to discuss a project, or just want to say hi — my inbox is always open. 
+            I'll do my best to get back to you within 24-48 hours. Looking forward to connecting!
+          </p>
+          <ul class="contact__details" role="list">
+            <li>
+              <span class="contact__detail-label">Email</span>
+              <!-- REPLACE: Your email -->
+              <a href="mailto:akipkoech582@gmail.com" class="contact__detail-value">akipkoech582@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact__detail-label">Based in</span>
+              <!-- REPLACE: Your location -->
+              <span class="contact__detail-value">Nairobi, Kenya</span>
+            </li>
+            <li>
+              <span class="contact__detail-label">Availability</span>
+              <!-- REPLACE: Your current availability status -->
+              <span class="contact__detail-value contact__avail">
+                <span class="contact__avail-dot" aria-hidden="true"></span>
+                Open to freelance &amp; full-time
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact__form reveal__child" id="contactForm" novalidate aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Name</label>
+              <!-- REPLACE: Update the placeholder text if desired -->
+              <input type="text" id="contactName" name="name" class="form-input" placeholder="Jane Smith" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Email</label>
+              <input type="email" id="contactEmail" name="email" class="form-input" placeholder="jane@example.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject" class="form-label">Subject</label>
+            <input type="text" id="contactSubject" name="subject" class="form-input" placeholder="Project Inquiry" required />
+          </div>
+          <div class="form-group">
+            <label for="contactMessage" class="form-label">Message</label>
+            <textarea id="contactMessage" name="message" class="form-input form-textarea" placeholder="Tell me about your project..." required rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="contactSubmit">
+            <span class="btn__text">Send Message</span>
+            <span class="btn__icon" aria-hidden="true">→</span>
+          </button>
+          <!-- Form success / error messages will be injected here by JS -->
+          <div class="form-message" id="formMessage" role="alert" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__logo">AK<span class="nav__logo-dot">.</span></span>
+      <!-- REPLACE: Update footer copy with your name and preferred social links -->
+      <p class="footer__copy">
+        Designed &amp; built by <strong>Amos Kipkoech</strong> — 2026
+        <!-- Syche Made by Bett Brian 😅-->
+      </p>
+      <div class="footer__socials">
+        <a href="https://github.com/Amos213"   target="_blank" rel="noopener" aria-label="GitHub"   class="social-link">Github</a>
+        <a href="https://linkedin.com/in/kipkoech-amos" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">LinkedIn</a>
+        <a href="https://twitter.com"  target="_blank" rel="noopener" aria-label="Twitter"  class="social-link">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS at end of body for performance -->
+  <script src="script.js" defer></script>
+</body>
+</html>
